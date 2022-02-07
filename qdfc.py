@@ -35,7 +35,7 @@ def do_dec(filename):
 def main():
     if len(sys.argv) == 3:
         global chunk
-        chunk = (1024*1024*10)  # 10MB CHUNK
+        chunk = (1024*1024*100)  # 100MB CHUNK
         match sys.argv[1]:
             case "-enc":
                 do_enc(sys.argv[2])
